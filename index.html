@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Razor’s Edge Manufacturing</title>
+<style>
+  body {margin:0; font-family: Arial, sans-serif; background:#f5f5f5; color:#111;}
+  header {background:#1f2937; color:white; padding:20px 40px; display:flex; justify-content:space-between; align-items:center;}
+  header h1 {margin:0; font-size:24px;}
+  nav a {color:white; text-decoration:none; margin-left:20px;}
+  nav a:hover {text-decoration:underline;}
+  .hero {padding:60px 20px; text-align:center; background:#374151; color:white;}
+  .hero h2 {font-size:32px; margin-bottom:20px;}
+  .products {display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px; padding:40px 20px;}
+  .product-card {background:white; border-radius:8px; padding:20px; box-shadow:0 4px 8px rgba(0,0,0,0.1); text-align:center;}
+  .product-card img {max-width:100%; border-radius:4px;}
+  .product-card h3 {margin:12px 0 8px;}
+  .product-card p {margin:0 0 12px; color:#555;}
+  footer {background:#1f2937; color:white; text-align:center; padding:20px;}
+  form {display:flex; flex-direction:column; gap:10px; max-width:400px; margin:0 auto;}
+  input, textarea {padding:10px; border-radius:4px; border:1px solid #ccc; width:100%;}
+  button {padding:12px; background:#111827; color:white; border:none; border-radius:4px; cursor:pointer;}
+  button:hover {background:#374151;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Razor’s Edge Manufacturing</h1>
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Precision-built solutions for industry</h2>
+  <p>High-quality equipment engineered for reliability and performance.</p>
+</section>
+
+<section id="products" class="products">
+  <div class="product-card">
+    <img src="https://via.placeholder.com/300x200?text=Pepperoni+Slicer" alt="Pepperoni Slicer">
+    <h3>Pepperoni Slicer</h3>
+    <p>High-speed, precision slicer engineered for consistent results.</p>
+  </div>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/300x200?text=Fleshing+Machine" alt="Fleshing Machine">
+    <h3>Fleshing Machine</h3>
+    <p>Durable fleshing machine optimized for yield and gentle handling.</p>
+  </div>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/300x200?text=BX+Cutter" alt="BX Cutter">
+    <h3>BX Cutter</h3>
+    <p>Robust BX cutter for high-throughput trimming and portioning tasks.</p>
+  </div>
+</section>
+
+<section id="contact" style="padding:40px 20px; text-align:center;">
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  Razor’s Edge LLC © 2025 | <a href="mailto:info@razorsedgemanufacturing.com" style="color:white; text-decoration:underline;">info@razorsedgemanufacturing.com</a>
+</footer>
+
+</body>
+</html>
