@@ -1,0 +1,142 @@
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #000;
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  color: #dc2626;
+  text-decoration: underline;
+}
+
+.hero {
+  padding: 5px 10px;
+  text-align: center;
+  background: #dc2626;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.products {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  background: #fafafa;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  border-top: 3px solid #dc2626;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.product-card h3 {
+  margin: 12px 0 8px;
+  color: #000;
+}
+
+.product-card p {
+  margin: 0 0 12px;
+  color: #333;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 12px;
+  background: #dc2626;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b91c1c;
+}
+
+.contact-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  margin-top: 0;
+  color: #000;
+}
+
+footer a {
+  color: #dc2626;
+  text-decoration: underline;
+}
